@@ -43,8 +43,8 @@ get_files tribes2gsi.exe                      "https://www.the-construct.net/dow
 get_files TribesNext_rc2a.exe                 "https://www.tribesnext.com/files/"                                   "$TMPBASE"
 get_files msvcrt-ruby190.zip                  "https://files.playt2.com/Linux/Lutris/msvcrt-ruby190.zip"        "$TMPBASE"
 get_files classic_v152.zip                    "https://tribes2stats.com/files/mods/"                                "$TMPBASE"
-get_files t2-auth-faster.zip                  "https://files.playt2.com/Linux/Server/t2-auth-faster.zip"  "$TMPBASE"
-get_files vcrun22.zip                         "https://files.playt2.com/Linux/Server/vcrun22.zip"  "$TMPBASE"
+get_files t2-auth-faster.zip                  "https://files.playt2.com/Linux/Server/"  "$TMPBASE"
+get_files vcrun22.zip                         "https://files.playt2.com/Linux/Server/"  "$TMPBASE"
 
 # -- some items require an headerless
 export DISPLAY=:99
