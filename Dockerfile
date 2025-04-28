@@ -55,7 +55,7 @@ RUN mkdir -pm755 /etc/apt/keyrings
 RUN wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
 RUN wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bookworm/winehq-bookworm.sources
 RUN apt-get -y update && apt-get -y upgrade
-RUN apt-get install --install-recommends wine-devel=8.16~bookworm-1 wine-devel-amd64=8.16~bookworm-1 wine-devel-i386=8.16~bookworm-1 winehq-devel=8.16~bookworm-1
+RUN apt-get -y install wine-devel=8.16~bookworm-1 wine-devel-i386=8.16~bookworm-1 winehq-devel=8.16~bookworm-1
 
 # INSTALL GAMEMODE
 #RUN add-apt-repository ppa:samoilov-lex/gamemode
