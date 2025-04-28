@@ -26,7 +26,7 @@ ARG SRVDIR=/tmp/tribes2/
 ENV INSTDIR=/home/${SRVUSER}/.wine32/drive_c/Dynamix/Tribes2/
 
 # WINE VERSION: wine = 1.6, wine-development = 1.7.29 for i386-jessie
-ENV WINEVER=wine-development
+ENV WINEVER=wine-stable
 ENV WINEARCH=win32
 ENV WINEPREFIX=/home/${SRVUSER}/.wine32/
 
@@ -55,7 +55,7 @@ RUN mkdir -pm755 /etc/apt/keyrings
 RUN wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
 RUN wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bookworm/winehq-bookworm.sources
 RUN apt-get -y update && apt-get -y upgrade
-RUN apt-get -y install wine-devel=8.16~bookworm-1 wine-devel-i386=8.16~bookworm-1 winehq-devel=8.16~bookworm-1
+RUN apt-get -y install --install-recommends wine-stable=10.0~bookworm-1 wine-stable-i386=10.0~bookworm-1 winehq-stable=10.0~bookworm-1
 
 # INSTALL GAMEMODE
 #RUN add-apt-repository ppa:samoilov-lex/gamemode
