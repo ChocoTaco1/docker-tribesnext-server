@@ -1,6 +1,6 @@
 # Multi-Stage Build (TacoServer)
 # This stage compiles the various resources that make up TacoServer
-FROM alpine:3.10 as tacobuilder
+FROM --platform=linux/amd64 alpine:3.10 as tacobuilder
 
 RUN apk --update add git sed less wget nano openssh && \
     rm -rf /var/lib/apt/lists/* && \
@@ -16,7 +16,7 @@ WORKDIR /tmp
 
 
 # Main Game Server Image
-FROM i386/debian:bookworm
+FROM --platform=linux/i386 i386/debian:bookworm
 LABEL maintainer="sairuk, amineo, chocotaco"
 
 # ENVIRONMENT
