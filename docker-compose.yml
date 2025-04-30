@@ -33,24 +33,24 @@ services:
       T2_VoteAdmin: 1
       T2_VoteAdminPlayerMin: 8
       T2_Admin2AdminOthers: 1
-      T2_JoinBanner: "<color:3cb4b4><font:Sui Generis:22>Welcome\\n<color:3cb4b4><font:Univers:16>Get Mappacks at https://playt2.tk"
+      T2_JoinBanner: "Celebrating 20 Years of Tribes2! More information in Discord. <a:playt2.com/discord>playt2.com/discord</a>"
       T2_JoinBannerLines: 3
       T2_JoinBannerTime: 6
       T2_LoadScreenColor1: "05edad"
       T2_LoadScreenColor2: "29DEE7"
       T2_LoadScreenColor3: "33CCCC"
       T2_LoadScreenLine1: "Join Discord:"
-      T2_LoadScreenLine1_Msg: "https://discord.me/tribes2"
+      T2_LoadScreenLine1_Msg: "<a:playt2.com/discord>playt2.com/discord</a>"
       T2_LoadScreenLine2: "Game Modes:"
       T2_LoadScreenLine2_Msg: "LakRabbit, Capture the Flag, DeathMatch, (Light Only) Capture the Flag"
       T2_LoadScreenLine3: "Required Mappacks:"
-      T2_LoadScreenLine3_Msg: "S5, S8, TWL, TWL2 - Get them at http://playt2.tk"
+      T2_LoadScreenLine3_Msg: "TWL, TWL2, S5, S8, DMP"
       T2_LoadScreenLine4: "Server Location:"
-      T2_LoadScreenLine4_Msg: "Chicago"
+      T2_LoadScreenLine4_Msg: "Somewhere"
       T2_LoadScreenLine5: "Server Infrastructure GitHub:"
       T2_LoadScreenLine5_Msg: "https://github.com/amineo/docker-tribesnext-server"
       T2_LoadScreenLine6: "TacoServer GitHub:"
-      T2_LoadScreenLine6_Msg: "https://github.com/ChocoTaco1/TacoServer"
+      T2_LoadScreenLine6_Msg: "<a:github.com/ChocoTaco1/TacoServer>github.com/ChocoTaco1/TacoServer</a>"
       T2_LoadScreenMOTD1: "Have fun!"
       T2_LoadScreenMOTD2: " "
       T2_LoadScreenMOTD3: " "
@@ -75,7 +75,7 @@ services:
       - serverStats:/home/gameserv/.wine32/drive_c/Dynamix/Tribes2/GameData/Classic/serverStats
       - stats:/home/gameserv/.wine32/drive_c/Dynamix/Tribes2/GameData/Classic/stats
       - logs:/home/gameserv/.wine32/drive_c/Dynamix/Tribes2/GameData/Classic/logs
-                   
+
     networks:
       - t2-net
 
@@ -109,7 +109,7 @@ secrets:
     name: t2.admin.list.v1
   t2.admin.password:
     external: true
-    name: t2.admin.password.v1    
+    name: t2.admin.password.v1
   t2.classic.superadmin.password:
     external: true
     name: t2.classic.superadmin.password.v1
@@ -118,4 +118,4 @@ secrets:
     name: t2.classic.telnet.password.v1
   t2.classic.telnet.listen.password:
     external: true
-    name: t2.classic.telnet.listen.password.v1    
+    name: t2.classic.telnet.listen.password.v1
