@@ -41,7 +41,7 @@ check_requirements
 # -- download files
 get_files tribes2gsi.exe                      "https://www.the-construct.net/downloads/tribes2/"                    "$TMPBASE"
 get_files TribesNext_rc2a.exe                 "https://www.tribesnext.com/files/"                                   "$TMPBASE"
-get_files msvcrt-ruby190.zip                  "https://files.playt2.com/Linux/Lutris/msvcrt-ruby190.zip"        "$TMPBASE"
+get_files msvcrt-ruby190.zip                  "https://files.playt2.com/Linux/Lutris/"        "$TMPBASE"
 get_files classic_v152.zip                    "https://tribes2stats.com/files/mods/"                                "$TMPBASE"
 get_files t2-auth-faster.zip                  "https://files.playt2.com/Linux/Server/"  "$TMPBASE"
 get_files vcrun22.zip                         "https://files.playt2.com/Linux/Server/"  "$TMPBASE"
